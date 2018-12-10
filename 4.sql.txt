@@ -1,0 +1,12 @@
+CREATE TABLE `menu` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `kategoria` varchar(255) COLLATE utf8_polish_ci DEFAULT NULL,
+  `podkategoria` varchar(255) COLLATE utf8_polish_ci DEFAULT NULL,
+  `produkt` varchar(255) COLLATE utf8_polish_ci DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
+
+INSERT INTO `menu` SET `kategoria`='Kategoria g³ówna',`podkategoria`='Podkategoria 1',`produkt`='Produkt a';
+INSERT INTO `menu` SET `kategoria`='Kategoria g³ówna',`podkategoria`='Podkategoria 1',`produkt`='Produkt B';
+INSERT INTO menu (kategoria,podkategoria,produkt) values ('Kategoria g³ówna','Podkategoria 2','Produkt C');
+INSERT INTO menu (kategoria,podkategoria,produkt) values ('Kategoria g³ówna','Podkategoria 2','Produkt D');
